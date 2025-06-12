@@ -1,0 +1,27 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <ItemGroup>
+    <ProjectReference Include="..\VisualRegressionAI.Core\VisualRegressionAI.Core.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="Models\resnet50-v2-7.onnx">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <!-- <Link>resnet50-v2-7.onnx</Link> -->
+    </None>
+  </ItemGroup>
+
+  <ItemGroup>
+      <Content Include="Images\**">
+          <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      </Content>
+  </ItemGroup>
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net7.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+</Project>

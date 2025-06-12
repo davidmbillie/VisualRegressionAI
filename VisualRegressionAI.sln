@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.31903.59
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VisualRegressionAI.Console", "VisualRegressionAI.Console\VisualRegressionAI.Console.csproj", "{A99F3EB4-D24D-498B-AEF5-515D4E5A783C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VisualRegressionAI.Core", "VisualRegressionAI.Core\VisualRegressionAI.Core.csproj", "{9C7C7A97-3807-4475-96CD-A1BBE85513E9}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A99F3EB4-D24D-498B-AEF5-515D4E5A783C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A99F3EB4-D24D-498B-AEF5-515D4E5A783C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A99F3EB4-D24D-498B-AEF5-515D4E5A783C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A99F3EB4-D24D-498B-AEF5-515D4E5A783C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9C7C7A97-3807-4475-96CD-A1BBE85513E9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9C7C7A97-3807-4475-96CD-A1BBE85513E9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9C7C7A97-3807-4475-96CD-A1BBE85513E9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9C7C7A97-3807-4475-96CD-A1BBE85513E9}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
