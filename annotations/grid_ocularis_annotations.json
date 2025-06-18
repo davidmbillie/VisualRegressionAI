@@ -1,0 +1,133 @@
+{
+  "info": {
+    "description": "Grid Ocularis",
+    "version": "1.0",
+    "year": 2025,
+    "contributor": "db",
+    "date_created": "2025-06-18"
+  },
+  "images": [
+    {
+      "id": 1,
+      "file_name": "image1.png",
+      "width": 1433,
+      "height": 293
+    },
+    {
+      "id": 2,
+      "file_name": "image2.png",
+      "width": 1457,
+      "height": 385
+    }
+  ],
+  "annotations": [
+    {
+      "id": 1,
+      "image_id": 1,
+      "category_id": 1,
+      "bbox": [
+        482,
+        176,
+        22,
+        40
+      ],
+      "iscrowd": 0
+    },
+    {
+      "id": 2,
+      "image_id": 1,
+      "category_id": 2,
+      "bbox": [
+        926,
+        176,
+        22,
+        40
+      ],
+      "iscrowd": 0
+    },
+    {
+      "id": 3,
+      "image_id": 1,
+      "category_id": 2,
+      "bbox": [
+        976,
+        176,
+        22,
+        40
+      ],
+      "iscrowd": 0
+    },
+    {
+      "id": 4,
+      "image_id": 1,
+      "category_id": 2,
+      "bbox": [
+        1005,
+        176,
+        22,
+        40
+      ],
+      "iscrowd": 0
+    },
+    {
+      "id": 5,
+      "image_id": 2,
+      "category_id": 1,
+      "bbox": [
+        470,
+        210,
+        22,
+        40
+      ],
+      "iscrowd": 0
+    },
+    {
+      "id": 6,
+      "image_id": 2,
+      "category_id": 1,
+      "bbox": [
+        595,
+        210,
+        22,
+        40
+      ],
+      "iscrowd": 0
+    },
+    {
+      "id": 7,
+      "image_id": 2,
+      "category_id": 1,
+      "bbox": [
+        755,
+        210,
+        22,
+        40
+      ],
+      "iscrowd": 0
+    },
+    {
+      "id": 8,
+      "image_id": 2,
+      "category_id": 1,
+      "bbox": [
+        1015,
+        210,
+        22,
+        40
+      ],
+      "iscrowd": 0
+    }
+  ],
+  "categories": [
+    {
+      "id": 1,
+      "name": "Y",
+      "supercategory": "marker"
+    },
+    {
+      "id": 2,
+      "name": "P",
+      "supercategory": "marker"
+    }
+  ]
+}
