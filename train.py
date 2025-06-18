@@ -91,6 +91,15 @@ def main():
 
     # Save model
     torch.save(model.state_dict(), "models/grid_ocularis_model.pth")
+    torch.onnx.export(
+        model,
+        dummy_input,
+        "models/grid_ocularis.onnx",
+        input_names=["input"],
+        output_names=["boxes", "labels", "scores"],
+        opset_version=11,
+        dynamic_axes={"input": {0: "batch_size"}}
+    )
 
 if __name__ == "__main__":
     main()
