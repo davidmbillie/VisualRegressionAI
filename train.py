@@ -7,7 +7,7 @@ import cv2
 import os
 import json
 
-class ProjectOcularisDataset(torch.utils.data.Dataset):
+class GridOcularisDataset(torch.utils.data.Dataset):
     def __init__(self, coco_json_path, image_dir, transforms=None):
         with open(coco_json_path) as f:
             coco_data = json.load(f)
@@ -51,7 +51,7 @@ def collate_fn(batch):
     return tuple(zip(*batch))
 
 def main():
-    dataset = ProjectOcularisDataset("annotations/project_ocularis_annotations.json", "images/")
+    dataset = GridOcularisDataset("annotations/grid_ocularis_annotations.json", "images/")
     data_loader = torch.utils.data.DataLoader(dataset, batch_size=2, shuffle=True, collate_fn=collate_fn)
 
     model = ssdlite320_mobilenet_v3_large(pretrained=True)
@@ -90,7 +90,7 @@ def main():
             print(f"Epoch {epoch+1}, Loss: {losses.item():.4f}")
 
     # Save model
-    torch.save(model.state_dict(), "models/project_ocularis_model.pth")
+    torch.save(model.state_dict(), "models/grid_ocularis_model.pth")
 
 if __name__ == "__main__":
     main()
